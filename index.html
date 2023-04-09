@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="gradient.css">
+    <link rel="shortcut icon" type="image/png" href="gradienticon.png">
+    <script src="gradient.js" defer="defer"></script>
+    <title>Live Gradient</title>
+</head>
+<body id="body">
+    <div class="container">
+        <div class="output"></div>
+        <div class="gradient">
+            <span>Colors</span>
+            <div> 
+                <input type="color" id="color1" value="#d91ce6">
+                <input type="color" id="color2" value="#fada07">
+            </div>
+        </div>
+        <div class="direction">
+            <span>Direction</span>
+            <select id="select">
+                <option value="to right">Left to Right</option>
+                <option value="to left">Right to Left</option>
+                <option value="to top">Bottom to Top</option>
+                <option value="to bottom">Top to Buttom</option>
+                <option value="to bottom right">Top Left to Buttom Right</option>
+                <option value="to bottom left">Top Right to Buttom Left</option>
+            </select>
+        </div>
+        <div class="buttons">
+            <button id="generatebtn">Generate</button>
+            <button id="refreshbtn">Refresh</button>
+            <button id="randombtn">Random</button>
+        </div>
+        <div class="css-output">
+            <textarea id="csstext" placeholder="CSS Text"></textarea>
+        </div>
+        <button class="copybtn" id="copy">Copy Css Code</button>
+    </div>
+
+</body>
+</html>
